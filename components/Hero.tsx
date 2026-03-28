@@ -61,7 +61,7 @@ export default function Hero() {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fillStyle = p.color;
-        ctx.globalAlpha = 0.6;
+        ctx.globalAlpha = 0.85;
         ctx.fill();
         ctx.globalAlpha = 1;
 
@@ -70,7 +70,7 @@ export default function Hero() {
           const dist = Math.hypot(p.x - q.x, p.y - q.y);
           if (dist < 120) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(37, 99, 235, ${(1 - dist / 120) * 0.25})`;
+            ctx.strokeStyle = `rgba(37, 99, 235, ${(1 - dist / 120) * 0.45})`;
             ctx.lineWidth = 0.6;
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(q.x, q.y);
@@ -159,8 +159,16 @@ export default function Hero() {
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
             {/* Name */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight tracking-tight">
-              <span className="text-slate-900">Pavithraa </span>
-              <span className="gradient-text">Satchithanantham</span>
+              <span
+                style={{
+                  background: "linear-gradient(135deg, #1e3a8a 0%, #4f46e5 50%, #7c3aed 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Pavithraa Satchithanantham
+              </span>
             </h1>
 
             {/* Typewriter */}
