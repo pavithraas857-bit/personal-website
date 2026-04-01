@@ -35,4 +35,6 @@ export interface Award {
   organization: string;
   date: string;
   type: "award" | "publication";
+  link?: string;
+  description?: string;
 }

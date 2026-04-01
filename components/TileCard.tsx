@@ -24,21 +24,22 @@ export default function TileCard({ tile, onViewDetails, delay = 0 }: TileCardPro
       >
         {/* Grid-line depth overlay */}
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-30"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,.10) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.10) 1px, transparent 1px)",
+              "linear-gradient(rgba(0,0,0,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.06) 1px, transparent 1px)",
             backgroundSize: "22px 22px",
           }}
         />
         {/* Glow orb */}
         <div
-          className="absolute w-32 h-32 rounded-full opacity-20 blur-2xl"
+          className="absolute w-32 h-32 rounded-full opacity-25 blur-2xl"
           style={{ background: tile.theme.accentColor }}
         />
         {/* SVG icon */}
         <div
-          className="relative w-14 h-14 text-white/75"
+          className="relative w-14 h-14"
+          style={{ color: tile.theme.accentColor }}
           dangerouslySetInnerHTML={{ __html: tile.theme.svgIcon }}
         />
       </div>

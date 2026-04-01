@@ -67,10 +67,10 @@ export default function TileModal({ tile, onClose }: TileModalProps) {
             >
               {/* Grid overlay */}
               <div
-                className="absolute inset-0 opacity-20"
+                className="absolute inset-0 opacity-30"
                 style={{
                   backgroundImage:
-                    "linear-gradient(rgba(255,255,255,.10) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.10) 1px, transparent 1px)",
+                    "linear-gradient(rgba(0,0,0,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.06) 1px, transparent 1px)",
                   backgroundSize: "22px 22px",
                 }}
               />
@@ -81,7 +81,8 @@ export default function TileModal({ tile, onClose }: TileModalProps) {
               />
               {/* Icon */}
               <div
-                className="relative w-16 h-16 text-white/80"
+                className="relative w-16 h-16"
+                style={{ color: tile.theme.accentColor }}
                 dangerouslySetInnerHTML={{ __html: tile.theme.svgIcon }}
               />
               {/* Close button */}

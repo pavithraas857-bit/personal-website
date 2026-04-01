@@ -7,12 +7,30 @@ function TimelineItem({ item, accentColor }: { item: Award; accentColor: string 
     <div className="relative pl-6">
       {/* Timeline dot */}
       <div
-        className="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-[#f8faff]"
+        className="absolute left-0 top-1.5 w-3 h-3 rounded-full border-2 border-white"
         style={{ background: accentColor }}
       />
       <p className="font-mono text-xs text-slate-500 mb-0.5">{item.date}</p>
-      <p className="text-slate-900 font-semibold text-sm leading-snug mb-0.5">{item.title}</p>
+      {item.link ? (
+        <a
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-slate-900 font-semibold text-sm leading-snug mb-0.5 hover:underline inline-flex items-center gap-1 group"
+          style={{ color: accentColor }}
+        >
+          {item.title}
+          <svg className="w-3 h-3 opacity-60 group-hover:opacity-100" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
+      ) : (
+        <p className="text-slate-900 font-semibold text-sm leading-snug mb-0.5">{item.title}</p>
+      )}
       <p className="text-slate-500 text-xs">{item.organization}</p>
+      {item.description && (
+        <p className="text-slate-500 text-xs mt-1 leading-relaxed">{item.description}</p>
+      )}
     </div>
   );
 }

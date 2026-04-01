@@ -121,8 +121,8 @@ export const EXPERIENCES: Tile[] = [
     location: "Denver, Colorado",
     dateRange: "June 2025 – August 2025",
     theme: {
-      gradientFrom: "#1a1a4e",
-      gradientTo: "#0d3b6e",
+      gradientFrom: "#e0f2fe",
+      gradientTo: "#ede9fe",
       accentColor: "#3b82f6",
       svgIcon: NEURAL_NET_SVG,
     },
@@ -142,8 +142,8 @@ export const EXPERIENCES: Tile[] = [
     location: "Bengaluru, India",
     dateRange: "June 2023 – November 2023",
     theme: {
-      gradientFrom: "#0d2b45",
-      gradientTo: "#1a4a3a",
+      gradientFrom: "#cffafe",
+      gradientTo: "#d1fae5",
       accentColor: "#06b6d4",
       svgIcon: VR_HEADSET_SVG,
     },
@@ -162,8 +162,8 @@ export const EXPERIENCES: Tile[] = [
     location: "Bengaluru, India",
     dateRange: "April 2023 – May 2023",
     theme: {
-      gradientFrom: "#1a2a4a",
-      gradientTo: "#2a1a4a",
+      gradientFrom: "#f3e8ff",
+      gradientTo: "#ede9fe",
       accentColor: "#8b5cf6",
       svgIcon: GAME_CONTROLLER_SVG,
     },
@@ -181,8 +181,8 @@ export const EXPERIENCES: Tile[] = [
     location: "Bengaluru, India",
     dateRange: "October 2021 – February 2022",
     theme: {
-      gradientFrom: "#2a1a0a",
-      gradientTo: "#1a0a2a",
+      gradientFrom: "#fef9c3",
+      gradientTo: "#fce7f3",
       accentColor: "#f59e0b",
       svgIcon: BLOCKCHAIN_SVG,
     },
@@ -206,8 +206,8 @@ export const PROJECTS: Tile[] = [
     location: "Bengaluru, India",
     dateRange: "October 2021 – June 2022",
     theme: {
-      gradientFrom: "#0a1a2a",
-      gradientTo: "#1a2a3a",
+      gradientFrom: "#f1f5f9",
+      gradientTo: "#e2e8f0",
       accentColor: "#64748b",
       svgIcon: DRONE_SVG,
     },
@@ -306,15 +306,35 @@ export const AWARDS: Award[] = [
     type: "award",
   },
   {
+    title: "New American University Scholarship Awardee",
+    organization: "Arizona State University · $8,000 Merit-based Scholarship",
+    date: "2024",
+    type: "award",
+    description:
+      "Awarded the merit-based NaMU scholarship worth $8,000 towards my Master's degree. Receiving this award signifies ASU's investment in the scholar and their ability to tackle fresh academic challenges and contribute to the university community. It is a mark of distinction on a student's profile.",
+  },
+  {
     title: "Winner — Smart India Hackathon 2022",
-    organization: "Ministry of Education, Govt. of India · $1,200 Prize",
+    organization: "Ministry of Education, Govt. of India · National Level Hackathon · INR 1,00,000 Prize",
     date: "August 2022",
     type: "award",
   },
   {
     title: "Runner-up — Sovereign Nature Winter Hackathon 2022",
-    organization: "Sovereign Nature Initiative (SNI) × De Ceuvel",
+    organization: "Sovereign Nature Initiative (SNI) × De Ceuvel · International Level Hackathon",
     date: "February 2022",
+    type: "award",
+  },
+  {
+    title: "Runner-up — IEEE CCEM Student Project Showcase",
+    organization: "11th International Conference on Cloud Computing in Emerging Markets 2022 · Virtual Pre-Conference Workshop",
+    date: "April 2022",
+    type: "award",
+  },
+  {
+    title: "Quarter-Finalist — WeTech Afterschool Program",
+    organization: "Goldman Sachs Group, Inc. · Issued by Institute of International Education",
+    date: "2022",
     type: "award",
   },
   {
@@ -322,11 +342,13 @@ export const AWARDS: Award[] = [
     organization: "IEEE ICDDS 2023 — 2nd International Conference on Data, Decision and Systems",
     date: "2023",
     type: "publication",
+    link: "https://ieeexplore.ieee.org/document/10434890",
   },
   {
     title: "A Deep Learning Approach to Classify Drones and Birds",
     organization: "IEEE 2nd Mysuru Sub Section International Conference",
     date: "2022",
     type: "publication",
+    link: "https://ieeexplore.ieee.org/document/9972589",
   },
 ];
