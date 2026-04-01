@@ -315,15 +315,19 @@ export const AWARDS: Award[] = [
   },
   {
     title: "Winner — Smart India Hackathon 2022",
-    organization: "Ministry of Education, Govt. of India · National Level Hackathon · INR 1,00,000 Prize",
+    organization: "Ministry of Human Resource Development (MHRD) · AICTE · National Level Hackathon · INR 1,00,000 Prize",
     date: "August 2022",
     type: "award",
+    description:
+      "Winner of SIH 2022 out of 160,000+ competitors — built 'Garuda', an end-to-end drone detection system for a DRDO problem statement. Employs computer vision to identify small drones from low-resolution CCTV footage at 90.1% precision, drawing bounding boxes, updating a cloud database, and triggering real-time mobile alerts.",
   },
   {
     title: "Runner-up — Sovereign Nature Winter Hackathon 2022",
-    organization: "Sovereign Nature Initiative (SNI) × De Ceuvel · International Level Hackathon",
+    organization: "Stichting Sovereign Nature Initiative · International Level Hackathon",
     date: "February 2022",
     type: "award",
+    description:
+      "Developed 'Sattva', a platform to empower ecosystems to represent non-human life, establish governance models, and capture value autonomously. Built on a Style GAN model (Neural Style Transfer) and a Human Detection Algorithm to generate value for the ecosystem.",
   },
   {
     title: "Runner-up — IEEE CCEM Student Project Showcase",
@@ -336,6 +340,8 @@ export const AWARDS: Award[] = [
     organization: "Goldman Sachs Group, Inc. · Issued by Institute of International Education",
     date: "2022",
     type: "award",
+    description:
+      "Built by a team of 4 with Goldman Sachs mentors, 'Drool Quotient' reached the Quarter Finals. A social-impact mobile app aimed at enhancing visibility for small-scale food companies, cottage industries, and street vendors — connecting them with a digital audience.",
   },
   {
     title: "GARUDA: Third Eye for Detecting and Tracking Drones",
@@ -343,6 +349,8 @@ export const AWARDS: Award[] = [
     date: "2023",
     type: "publication",
     link: "https://ieeexplore.ieee.org/document/10434890",
+    description:
+      "Introduces a comprehensive drone detection and tracking system integrating deep learning with existing security camera networks. Using a YOLOv5-based architecture, GARUDA distinguishes drones from other aerial entities at 94.5% precision — even in low-light conditions at significant distances — with real-time tracking of direction and movement patterns. Scalable and designed for secure environments, it offers robust airspace surveillance and safety management.",
   },
   {
     title: "A Deep Learning Approach to Classify Drones and Birds",
@@ -350,5 +358,7 @@ export const AWARDS: Award[] = [
     date: "2022",
     type: "publication",
     link: "https://ieeexplore.ieee.org/document/9972589",
+    description:
+      "Proposes a deep learning solution to differentiate drones from birds using YOLOv4 and YOLOv5, trained on 900 images. YOLOv4 achieved 97.4% mAP (superior accuracy) while YOLOv5 reached 95% mAP with faster detection — suitable for real-time surveillance. Addresses false alarms from bird-like objects for a reliable drone security framework.",
   },
 ];
