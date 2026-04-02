@@ -76,7 +76,7 @@ export default function Hero() {
           className="w-full h-full object-contain object-top"
         />
         {/* Soft right-edge fade into white */}
-        <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-r from-transparent to-white hidden md:block" />
+        <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-r from-transparent to-white hidden md:block" />
         {/* Soft bottom-edge fade into white on mobile */}
         <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-b from-transparent to-white md:hidden" />
       </div>
