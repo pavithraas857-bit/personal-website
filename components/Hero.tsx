@@ -133,16 +133,6 @@ export default function Hero() {
           >
             Explore My Work
           </button>
-          <a
-            href={`${BASE_PATH}/resume.pdf`}
-            download
-            className="px-8 py-3 bg-blue-600 hover:bg-blue-700
-                       text-white border border-blue-600 hover:border-blue-700
-                       rounded-full font-semibold transition-all duration-300
-                       shadow-sm w-full sm:w-auto text-center"
-          >
-            Download Resume ↓
-          </a>
         </div>
       </div>
 
