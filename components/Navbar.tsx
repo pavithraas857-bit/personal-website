@@ -60,17 +60,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href={`${BASE_PATH}/resume.pdf`}
-              download
-              className="text-sm px-4 py-1.5 border border-blue-400 text-blue-700
-                         hover:bg-blue-50 hover:border-blue-500 rounded-md
-                         transition-all font-medium"
-            >
-              Resume
-            </a>
-          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -104,15 +93,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href={`${BASE_PATH}/resume.pdf`}
-                download
-                className="block text-blue-700 hover:text-blue-500 py-1 font-medium"
-              >
-                Download Resume
-              </a>
-            </li>
           </ul>
         </div>
       )}
